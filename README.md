@@ -17,6 +17,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/simonimhotep/windows-disk-steward/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/simonimhotep/windows-disk-steward?display_name=tag&amp;sort=semver"></a>
   <img alt="Platform: Windows" src="https://img.shields.io/badge/platform-Windows-0078D4?logo=windows11&amp;logoColor=white">
   <img alt="PowerShell 7 or later" src="https://img.shields.io/badge/PowerShell-7%2B-5391FE?logo=powershell&amp;logoColor=white">
   <img alt="Codex Skill" src="https://img.shields.io/badge/Codex-Skill-111827">
