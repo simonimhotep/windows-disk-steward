@@ -1,0 +1,7 @@
+interface:
+  display_name: "Windows 磁盘管家"
+  short_description: "安全扫描、分级清理并迁移 Windows 磁盘中的占用空间"
+  default_prompt: "使用 $windows-disk-steward 只读扫描 C 盘，给出删除和迁移建议，并在任何修改前向我确认。"
+
+policy:
+  allow_implicit_invocation: true
