@@ -1,4 +1,31 @@
-# Windows Disk Steward
+<p align="center">
+  <img src="assets/windows-disk-steward.png" width="180" alt="Windows Disk Steward icon: a protected hard drive with a scanning ring">
+</p>
+
+<h1 align="center">Windows Disk Steward</h1>
+
+<p align="center">
+  <strong>安全扫描、分级清理并迁移 Windows 磁盘数据。</strong><br>
+  Scan safely. Approve explicitly. Change only what was authorized.
+</p>
+
+<p align="center">
+  <a href="#安装">安装</a> ·
+  <a href="#使用方式">使用方式</a> ·
+  <a href="#安全边界">安全边界</a> ·
+  <a href="#测试">测试</a>
+</p>
+
+<p align="center">
+  <img alt="Platform: Windows" src="https://img.shields.io/badge/platform-Windows-0078D4?logo=windows11&amp;logoColor=white">
+  <img alt="PowerShell 7 or later" src="https://img.shields.io/badge/PowerShell-7%2B-5391FE?logo=powershell&amp;logoColor=white">
+  <img alt="Codex Skill" src="https://img.shields.io/badge/Codex-Skill-111827">
+  <img alt="Safety: explicit approval required" src="https://img.shields.io/badge/safety-explicit%20approval-16A34A">
+  <img alt="Self-tests: 27 passed" src="https://img.shields.io/badge/self--tests-27%2F27-brightgreen">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/simonimhotep/windows-disk-steward?logo=github">
+</p>
+
+---
 
 一个面向 Codex 的 Windows 磁盘治理 Skill，用于安全完成：
 
@@ -128,12 +155,15 @@ work/disk-steward/<run-id>/
 pwsh -NoProfile -File .\scripts\self-test.ps1
 ```
 
-当前自测覆盖只读扫描、重解析点跳过、权限失败记录、审批门、危险路径拒绝、快照漂移、精确删除、迁移、Junction 验证、失败保源和回滚。
+当前共包含27项端到端断言，覆盖只读扫描、重解析点跳过、权限失败记录、审批门、危险路径拒绝、快照漂移、精确删除、迁移、Junction 验证、失败保源和回滚。
 
 ## 项目结构
 
 ```text
 ├── SKILL.md
+├── README.md
+├── assets/
+│   └── windows-disk-steward.png
 ├── agents/openai.yaml
 ├── scripts/
 │   ├── scan-windows-disk.ps1
